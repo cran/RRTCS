@@ -1,4 +1,5 @@
 \name{RRTCS-internal}
+        \alias{RRTCS-S3method}
         \title{Internal RRTCS Functions}
         \description{
           Internal RRTCS functions

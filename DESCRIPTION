@@ -1,7 +1,7 @@
 Package: RRTCS
 Type: Package
 Title: Randomized Response Techniques for Complex Surveys
-Version: 0.0.1
+Version: 0.0.2
 Date: 2015-04-22
 Author: Beatriz Cobo Rodríguez, María del Mar Rueda García, Antonio Arcos
     Cebrián
@@ -16,8 +16,8 @@ Description: Point and interval estimation of linear parameters with data
     from surveys with these randomization methods are included in the package.
 License: GPL (>= 2)
 Encoding: UTF-8
-Imports: sampling, samplingVarEst
-Packaged: 2015-04-23 18:21:36 UTC; Usuario
+Imports: sampling, samplingVarEst, stats
 NeedsCompilation: no
+Packaged: 2015-07-02 10:53:23 UTC; Usuario
 Repository: CRAN
-Date/Publication: 2015-04-24 06:50:24
+Date/Publication: 2015-07-02 13:42:34
