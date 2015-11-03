@@ -64,7 +64,10 @@
 #'  2nd Edition. Springer.
 #' 
 #' @seealso \code{\link{Warner}}
+#' @seealso \code{\link{ChaudhuriChristofides}}
 #' @seealso \code{\link{EichhornHayre}}
+#' @seealso \code{\link{SoberanisCruz}}
+#' @seealso \code{\link{Horvitz}}
 #' 
 #' @keywords Randomized_response Resampling Variance Jackknife Escobar_Berger Campbell_Berger_Skinner
 #' @examples
@@ -118,13 +121,14 @@ ResamplingVariance=function(output,pi,type=c("total","mean"),option=1,N=NULL,pij
   if(any(is.na(output))){stop("There are missing values in output.")}
   
   if(!is.character(type)){stop("type must be a character")}
-  if((type!="total")&&(type!="mean")){stop("The value of type must be total or mean.")}                
+  if((type!="total")&(type!="mean")){stop("The value of type must be total or mean.")}                
   
-  if((option<1)||(option>3)){stop("The value of option must be between 1 and 3.")}
+  if((option<1)|(option>3)){stop("The value of option must be between 1 and 3.")}
   
-  if((srswr!=TRUE)&&(srswr!=FALSE)){stop("The value of srswr must be TRUE or FALSE")}
+  if(!is.logical(srswr)){srswr=as.logical(srswr)} 
+  if((srswr!=TRUE)&(srswr!=FALSE)){stop("The value of srswr must be TRUE or FALSE")}
   
-  if((is.null(pij))&&(option!=1)){
+  if((is.null(pij))&(option!=1)){
     warning("If you do not introduce pij you must choose the jackknife method. The output given is done with the jackknife method without strata nor cluster.")
     option=1
   }
@@ -146,11 +150,11 @@ ResamplingVariance=function(output,pi,type=c("total","mean"),option=1,N=NULL,pij
       if(!is.factor(clu)){clu=as.factor(clu)}
     }
 
-    if((strata==FALSE)&&(cluster==FALSE)){
+    if((strata==FALSE)&(cluster==FALSE)){
       Rve=JackknifeVariance(length(pi),output$TransformedVariable,pi)
     }
     
-    if((strata==TRUE)&&(cluster==FALSE)){
+    if((strata==TRUE)&(cluster==FALSE)){
      nh=table(str)
      ve=vector()
      for(i in levels(str)){
@@ -159,11 +163,11 @@ ResamplingVariance=function(output,pi,type=c("total","mean"),option=1,N=NULL,pij
      Rve=sum(ve)
     }
    
-    if((strata==FALSE)&&(cluster==TRUE)){
+    if((strata==FALSE)&(cluster==TRUE)){
      Rve=JackknifeVariance(length(levels(clu)),output$TransformedVariable,pi,cluster=cluster,clu=clu)
     }
     
-    if((strata==TRUE)&&(cluster==TRUE)){
+    if((strata==TRUE)&(cluster==TRUE)){
      ve=vector()
      for(i in levels(str)){
        cl_sti=droplevels(clu[str==i])         

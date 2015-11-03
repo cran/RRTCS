@@ -1,0 +1,86 @@
+---
+title: "RRTCS package. Application of Horvitz model to a real survey"
+author: "Beatriz Cobo Rodríguez, María del Mar Rueda García, Antonio Arcos Cebrián"
+date: "`r Sys.Date()`"
+output: rmarkdown::pdf_document
+vignette: >
+  %\VignetteIndexEntry{RRTCS package. Application of Horvitz model to a real survey}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+##Horvitz model
+In the Horvitz model, the randomized response device presents to the sampled person labelled $i$ a box containing a large number of identical cards, with a proportion $p,(0 <p < 1)$ bearing the mark $A$ and the rest marked $B$ (an innocuous attribute whose population proportion $\alpha$ is known).  
+The response solicited denoted by $z_i$ takes the value $y_i$ if $i$ bears $A$ and the card drawn is marked $A$ or if $i$ bears $B$ and the card drawn is marked $B$. Otherwise $z_i$ takes the value 0.
+![Sin titulo](pictures/horvitz.png)
+
+##Horvitz model example
+The file data "HorvitzDataRealSurvey.rda" stores a sample, extracted by simple random sampling without replacement, of size 710. With these data we estimate the prevalence of students who have sensitive characteristics set out below.  
+The randomized response technique used is Horvitz model (Horvitz et al, 1967 and Greenberg et al., 1969) with parameter $p=0.5$
+
+###Horvitz model survey design
+In this model an additional questionnaire with the following characteristics is required:  
+
+- The questions should not be sensitive.
+- The questions should not be related to the theme of "sensitive" questions.
+- For each of the questions that measure qualitative variables, the answers should have a known probability.
+
+The survey is
+
+![Sin titulo](pictures/encuesta.png)
+
+To estimate results, you must have the response probabilities of non-sensitive questions:
+
+![Sin titulo](pictures/prob_respuesta.png)
+
+###Horvitz model technique description
+In order to give more confidence to the respondent, he was given a booklet of instructions:
+
+- Step 1: Flip a coin and did not show anyone the side obtained.
+- Step 2: The question you must answer in each game depends on the side obtained on the coin:
+    - If you get head, answer the question preceded by the word HEAD 
+    - If you get tail, answer the question preceded by the word TAIL 
+  
+This procedure must be repeated for each question.
+
+The respondent only had to put on the question sheet a cross in the chosen answers, and then he deposited the survey sheet in an urn.
+
+We store the answers to senstive questions in data.frame (HorvitzDataRealSurvey.rda).
+
+###Horvitz function
+We use the Horvitz function to obtain the estimates:
+```{r}
+library("RRTCS")
+N=10777
+n=710
+data(HorvitzDataRealSurvey)
+p=0.5
+alpha=c(1/12,1/10,20/30,1/10,10/30,1/12)
+pi=rep(n/N,n)
+cl=0.95
+out1=Horvitz(HorvitzDataRealSurvey$copied,p,alpha[1],pi,"mean",cl,N)
+out1
+out2=Horvitz(HorvitzDataRealSurvey$fought,p,alpha[2],pi,"mean",cl,N)
+out2
+out3=Horvitz(HorvitzDataRealSurvey$bullied,p,alpha[3],pi,"mean",cl,N)
+out3
+out4=Horvitz(HorvitzDataRealSurvey$bullying,p,alpha[4],pi,"mean",cl,N)
+out4
+out5=Horvitz(HorvitzDataRealSurvey$drug,p,alpha[5],pi,"mean",cl,N)
+out5
+out6=Horvitz(HorvitzDataRealSurvey$sex,p,alpha[6],pi,"mean",cl,N)
+out6
+```
+
+##References
+Greenberg, B.G., Abul-Ela, A.L., Simmons, W.R., Horvitz, D.G. (1969).
+*The unrelated question RR model: Theoretical framework.*
+Journal of the American Statistical Association, 64, 520-539.
+
+Horvitz, D.G., Shah, B.V., Simmons, W.R. (1967).
+*The unrelated question RR model.*
+Proceedings of the Social Statistics Section of the American Statistical Association. 65-72. Alexandria, VA: ASA.
+
+
+
+
+

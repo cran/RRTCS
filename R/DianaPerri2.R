@@ -36,7 +36,7 @@
 #' 
 #' @references  Diana, G., Perri, P.F. (2010).
 #' \emph{New scrambled response models for estimating the mean of a sensitive quantitative character.}
-#' Journal of Applied Statistics 37 (11), 1875–1890.
+#' Journal of Applied Statistics 37 (11), 1875-1890.
 #' 
 #' @seealso \code{\link{DianaPerri2Data}}
 #' @seealso \code{\link{DianaPerri1}}
@@ -63,21 +63,21 @@ DianaPerri2=function(z,mu,beta,pi,type=c("total","mean"),cl,N=NULL,method="srswr
   if(any(is.na(mu))){stop("There are missing values in mu.")}  
   if(length(mu)!=2){stop("The length of the vector mu must be two")}
   
-  if((beta<0)||(beta>1)){stop("There are invalid values in beta.")}
+  if((beta<0)|(beta>1)){stop("There are invalid values in beta.")}
   
   if(!is.vector(pi)){stop("pi must be a vector.")}
   if(any(is.na(pi))){stop("There are missing values in pi.")}
-  if(any((pi<=0)||(pi>1))){stop("There are invalid values in pi.")}         
+  if(any((pi<=0)|(pi>1))){stop("There are invalid values in pi.")}         
   
   if(n!=length(pi)){stop("The lengths of z and pi are different.")}
   
   if(!is.character(type)){stop("type must be a character")}
-  if((type!="total")&&(type!="mean")){stop("The value of type must be total or mean.")}  
+  if((type!="total")&(type!="mean")){stop("The value of type must be total or mean.")}  
   
-  if((cl<=0)||(cl>=1)){stop("The value of cl must be in the range (0,1).")}
+  if((cl<=0)|(cl>=1)){stop("The value of cl must be in the range (0,1).")}
   
   if(!is.character(method)){stop("method must be a character")}
-  if((method!="srswr")&&(method!="srswor")){stop("The value of method must be srswr or srswor.")}  
+  if((method!="srswr")&(method!="srswor")){stop("The value of method must be srswr or srswor.")}  
   
   
   call=match.call()
@@ -99,7 +99,7 @@ DianaPerri2=function(z,mu,beta,pi,type=c("total","mean"),cl,N=NULL,method="srswr
       if(method=="srswor"){
         ve=ve*(1-n/N)
       }
-      ci=c(mean(e-zalpha*sqrt(ve)),mean(e+zalpha*sqrt(ve)))
+      ci=c((e-zalpha*sqrt(ve)),(e+zalpha*sqrt(ve)))
     }
   }
   
@@ -115,7 +115,7 @@ DianaPerri2=function(z,mu,beta,pi,type=c("total","mean"),cl,N=NULL,method="srswr
     if(method=="srswor"){
       ve=ve*(1-n/N)
     }
-    ci=c(mean(e-zalpha*sqrt(ve/n)),mean(e+zalpha*sqrt(ve/n)))
+    ci=c((e-zalpha*sqrt(ve)),(e+zalpha*sqrt(ve)))
   }
   
   if(ve<0){warning("The variance estimation can not be negative.")}

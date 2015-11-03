@@ -60,7 +60,7 @@ DianaPerri1(dat$z,p,mu,dat$Pi,"mean",cl,N,"srswor")
 \references{
 Diana, G., Perri, P.F. (2010).
 \emph{New scrambled response models for estimating the mean of a sensitive quantitative character.}
-Journal of Applied Statistics 37 (11), 1875–1890.
+Journal of Applied Statistics 37 (11), 1875-1890.
 }
 \seealso{
 \code{\link{DianaPerri1Data}}

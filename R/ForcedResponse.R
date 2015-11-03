@@ -35,6 +35,7 @@
 #'  Social Science Research, 1, 403-414.
 #'   
 #' @seealso \code{\link{ForcedResponseData}}
+#' @seealso \code{\link{ForcedResponseDataSt}}
 #' @seealso \code{\link{ResamplingVariance}}
 #' 
 #' @keywords Randomized_response Qualitative ForcedResponse Boruch Estimation Variance Transformed_variable Confidence_interval
@@ -42,6 +43,14 @@
 #' @examples
 #' data(ForcedResponseData)
 #' dat=with(ForcedResponseData,data.frame(z,Pi))
+#' p1=0.2
+#' p2=0.2
+#' cl=0.95
+#' ForcedResponse(dat$z,p1,p2,dat$Pi,"total",cl)
+#' 
+#' #Forced Response with strata
+#' data(ForcedResponseDataSt)
+#' dat=with(ForcedResponseDataSt,data.frame(ST,z,Pi))
 #' p1=0.2
 #' p2=0.2
 #' cl=0.95

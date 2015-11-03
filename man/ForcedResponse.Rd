@@ -50,6 +50,14 @@ p1=0.2
 p2=0.2
 cl=0.95
 ForcedResponse(dat$z,p1,p2,dat$Pi,"total",cl)
+
+#Forced Response with strata
+data(ForcedResponseDataSt)
+dat=with(ForcedResponseDataSt,data.frame(ST,z,Pi))
+p1=0.2
+p2=0.2
+cl=0.95
+ForcedResponse(dat$z,p1,p2,dat$Pi,"total",cl)
 }
 \references{
 Boruch, R.F. (1972).
@@ -58,6 +66,8 @@ Boruch, R.F. (1972).
 }
 \seealso{
 \code{\link{ForcedResponseData}}
+
+\code{\link{ForcedResponseDataSt}}
 
 \code{\link{ResamplingVariance}}
 }

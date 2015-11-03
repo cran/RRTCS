@@ -5,7 +5,7 @@
 #'  
 #' @description This data set contains observations from a randomized response survey conducted in a university to investigate bullying.
 #' The sample is drawn by simple random sampling without replacement. 
-#' The randomized response technique used is the Horvitz model (Horvitz et al., 1967) with parameter \eqn{p=0.5}.
+#' The randomized response technique used is the Horvitz model (Horvitz et al., 1967 and Greenberg et al., 1969) with parameter \eqn{p=0.5}.
 #' The unrelated question is: Were you born between the 1st and 20th of the month? with \eqn{\alpha=0.6666667}.
 #' 
 #' @format A data frame containing a sample of 411 observations from a population of \eqn{N=10777} students.

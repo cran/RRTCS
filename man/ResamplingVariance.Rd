@@ -125,7 +125,13 @@ Wolter, K.M. (2007).
 \seealso{
 \code{\link{Warner}}
 
+\code{\link{ChaudhuriChristofides}}
+
 \code{\link{EichhornHayre}}
+
+\code{\link{SoberanisCruz}}
+
+\code{\link{Horvitz}}
 }
 \keyword{Campbell_Berger_Skinner}
 \keyword{Escobar_Berger}

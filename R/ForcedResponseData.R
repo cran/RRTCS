@@ -5,7 +5,7 @@
 #'  
 #' @description This data set contains observations from a randomized response survey obtained from a simulated population. 
 #' The main variable is a binomial distribution with a probability 0.5.
-#' The sample is drawn by simple random sampling with replacement. 
+#' The sample is drawn by simple random sampling without replacement. 
 #' The randomized response technique used is the Forced Response model (Boruch, 1972) with parameters \eqn{p_1=0.2} and \eqn{p_2=0.2}.
 #' 
 #' @format A data frame containing 1000 observations from a population of \eqn{N=10000}. The variables are:

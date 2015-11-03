@@ -19,7 +19,7 @@ HorvitzDataStCl
 \description{
 This data set contains observations from a randomized response survey conducted in a university to investigate the infidelity.
 The sample is drawn by stratified (by faculty) cluster (by group) sampling.
-The randomized response technique used is the Horvitz model (Horvitz et al., 1967) with parameter \eqn{p=0.6}.
+The randomized response technique used is the Horvitz model (Horvitz et al., 1967 and Greenberg et al., 1969) with parameter \eqn{p=0.6}.
 The unrelated question is: Does your identity card end in an odd number? with a probability \eqn{\alpha=0.5}.
 }
 \examples{

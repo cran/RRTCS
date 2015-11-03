@@ -6,7 +6,7 @@
   cat("\n",x$Name," model for the ",x$Type," estimator\nParameters: ",
        paste(names(x$Param),gsub(" ","",formatC(x$Param,digits=2)),sep="=",collapse="; "),"\n",sep="")
 
-  if((x$Model=="Qualitative")&&(x$Type=="total")){
+  if((x$Model=="Qualitative")&(x$Type=="total")){
     cat("\nEstimation:",round(x$Estimation))
   }else{
   cat("\nEstimation:",x$Estimation)

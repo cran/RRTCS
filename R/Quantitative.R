@@ -3,11 +3,11 @@ Quantitative=function(z,p1,p2,p3,mu,sigma){
   if(!is.vector(z)){stop("z must be a vector.")}
   if(any(is.na(z))){stop("There are missing values in z.")}                          
   
-  if((p1<0)||(p1>1)){stop("There are invalid values in p1.")}
+  if((p1<0)|(p1>1)){stop("There are invalid values in p1.")}
   
-  if((p2<0)||(p2>1)){stop("There are invalid values in p2.")}
+  if((p2<0)|(p2>1)){stop("There are invalid values in p2.")}
   
-  if((p3<0)||(p3>1)){stop("There are invalid values in p3.")}
+  if((p3<0)|(p3>1)){stop("There are invalid values in p3.")}
   
   if(!is.vector(mu)){stop("mu must be a vector.")}
   if(any(is.na(mu))){stop("There are missing values in mu.")}  
