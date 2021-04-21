@@ -17,7 +17,7 @@
 #'  \item Pi: first-order inclusion probabilities
 #' }
 #' 
-#' @usage DevoreData
+#' @usage data(DevoreData)
 #' 
 #' @examples data(DevoreData)
 #' 

@@ -11,7 +11,7 @@
  \item Pi: first-order inclusion probabilities
 }}
 \usage{
-WarnerData
+data(WarnerData)
 }
 \description{
 This data set contains observations from a randomized response survey related to alcohol abuse.

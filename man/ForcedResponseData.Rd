@@ -11,7 +11,7 @@
  \item Pi: first-order inclusion probabilities
 }}
 \usage{
-ForcedResponseData
+data(ForcedResponseData)
 }
 \description{
 This data set contains observations from a randomized response survey obtained from a simulated population.

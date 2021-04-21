@@ -13,7 +13,7 @@ The variables are:
  \item Pi: first-order inclusion probabilities
 }}
 \usage{
-BarLevData
+data(BarLevData)
 }
 \description{
 This data set contains observations from a randomized response survey conducted in a population of 2396 industrial companies in a city to investigate their income.

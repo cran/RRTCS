@@ -16,7 +16,7 @@
 #'  \item Pi: first-order inclusion probabilities
 #' }
 #' 
-#' @usage EichhornHayreData
+#' @usage data(EichhornHayreData)
 #' 
 #' @examples data(EichhornHayreData)
 #' 

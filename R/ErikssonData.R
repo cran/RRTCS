@@ -19,7 +19,7 @@
 #'     \item Pi: first-order inclusion probabilities  
 #' }
 #' 
-#' @usage ErikssonData
+#' @usage data(ErikssonData)
 #' 
 #' @examples data(ErikssonData)
 #' 

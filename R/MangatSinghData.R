@@ -16,7 +16,7 @@
 #'  \item Pi: first-order inclusion probabilities
 #' }
 #' 
-#' @usage MangatSinghData
+#' @usage data(MangatSinghData)
 #' 
 #' @examples data(MangatSinghData)
 #' 

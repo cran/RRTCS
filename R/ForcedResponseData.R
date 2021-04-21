@@ -15,7 +15,7 @@
 #'  \item Pi: first-order inclusion probabilities
 #' }
 #' 
-#' @usage ForcedResponseData
+#' @usage data(ForcedResponseData)
 #' 
 #' @examples data(ForcedResponseData)
 #' 

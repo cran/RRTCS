@@ -14,7 +14,7 @@ The variables are:
     \item Pi: first-order inclusion probabilities
   }}
 \usage{
-HorvitzDataStCl
+data(HorvitzDataStCl)
 }
 \description{
 This data set contains observations from a randomized response survey conducted in a university to investigate the infidelity.

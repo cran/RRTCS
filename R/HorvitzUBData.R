@@ -17,7 +17,7 @@
 #'  \item Pi: first-order inclusion probabilities
 #' }
 #' 
-#' @usage HorvitzUBData
+#' @usage data(HorvitzUBData)
 #' 
 #' @examples data(HorvitzUBData)
 #' 

@@ -14,7 +14,7 @@
 #'  \item Pi: first-order inclusion probabilities
 #' }
 #' 
-#' @usage ChristofidesData
+#' @usage data(ChristofidesData)
 #' 
 #' @examples data(ChristofidesData)
 #' 

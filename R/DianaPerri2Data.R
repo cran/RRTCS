@@ -16,7 +16,7 @@
 #'  \item Pi: first-order inclusion probabilities
 #' }
 #' 
-#' @usage DianaPerri2Data
+#' @usage data(DianaPerri2Data)
 #' 
 #' @examples data(DianaPerri2Data)
 #' 

@@ -14,7 +14,7 @@
 #'  \item Pi: first-order inclusion probabilities
 #' }
 #' 
-#' @usage SinghJoarderData
+#' @usage data(SinghJoarderData)
 #' 
 #' @examples data(SinghJoarderData)
 #' 

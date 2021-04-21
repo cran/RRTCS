@@ -31,7 +31,7 @@
 #'  \item sex: The randomized response to the question: Have you had sex on the premises of the university?
 #' }
 #' 
-#' @usage HorvitzData
+#' @usage data(HorvitzData)
 #' 
 #' @examples data(HorvitzDataRealSurvey)
 #' 

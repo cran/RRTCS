@@ -19,7 +19,7 @@
 #'     \item Pi: first-order inclusion probabilities  
 #'   }
 #' 
-#' @usage HorvitzDataStCl
+#' @usage data(HorvitzDataStCl)
 #' 
 #' @examples data(HorvitzDataStCl)
 #' 

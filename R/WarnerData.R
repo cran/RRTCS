@@ -14,7 +14,7 @@
 #'  \item Pi: first-order inclusion probabilities
 #' }
 #' 
-#' @usage WarnerData
+#' @usage data(WarnerData)
 #' 
 #' @examples data(WarnerData)
 #' 

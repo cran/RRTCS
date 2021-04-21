@@ -14,7 +14,7 @@
 #'  \item Pi: first-order inclusion probabilities
 #' }
 #' 
-#' @usage KukData
+#' @usage data(KukData)
 #' 
 #' @examples data(KukData)
 #' 

@@ -12,7 +12,7 @@ The variables are:
  \item Pi: first-order inclusion probabilities
 }}
 \usage{
-DianaPerri1Data
+data(DianaPerri1Data)
 }
 \description{
 This data set contains observations from a randomized response survey conducted in a population of 417 individuals in a municipality to investigate defrauded taxes.

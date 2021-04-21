@@ -15,7 +15,7 @@
 #'  \item Pi: first-order inclusion probabilities
 #' }
 #' 
-#' @usage ChaudhuriChristofidesData
+#' @usage data(ChaudhuriChristofidesData)
 #' 
 #' @examples data(ChaudhuriChristofidesData)
 #' 

@@ -12,7 +12,7 @@ The variables are:
  \item Pi: first-order inclusion probabilities
 }}
 \usage{
-HorvitzData
+data(HorvitzData)
 }
 \description{
 This data set contains observations from a randomized response survey conducted in a university to investigate bullying.

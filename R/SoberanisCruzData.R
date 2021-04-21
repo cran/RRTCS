@@ -19,7 +19,7 @@
 #'     \item Pi: first-order inclusion probabilities  
 #' }
 #' 
-#' @usage SoberanisCruzData
+#' @usage data(SoberanisCruzData)
 #' 
 #' @examples data(SoberanisCruzData)
 #' 

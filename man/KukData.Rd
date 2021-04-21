@@ -11,7 +11,7 @@
  \item Pi: first-order inclusion probabilities
 }}
 \usage{
-KukData
+data(KukData)
 }
 \description{
 This data set contains the data from a randomized response survey conducted in a university to investigate excessive sexual activity.

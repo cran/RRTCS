@@ -16,7 +16,7 @@
 #'  \item Pi: first-order inclusion probabilities
 #' }
 #' 
-#' @usage BarLevData
+#' @usage data(BarLevData)
 #' 
 #' @examples data(BarLevData)
 #' 

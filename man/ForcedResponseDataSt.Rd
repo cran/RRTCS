@@ -12,7 +12,7 @@
  \item Pi: first-order inclusion probabilities
 }}
 \usage{
-ForcedResponseDataSt
+data(ForcedResponseDataSt)
 }
 \description{
 This data set contains observations from a randomized response survey to determine the prevalence of infertility among women of childbearing age in a population-base study.

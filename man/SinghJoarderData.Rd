@@ -11,7 +11,7 @@
  \item Pi: first-order inclusion probabilities
 }}
 \usage{
-SinghJoarderData
+data(SinghJoarderData)
 }
 \description{
 This data set contains observations from a randomized response survey conducted in a university to investigate compulsive spending.

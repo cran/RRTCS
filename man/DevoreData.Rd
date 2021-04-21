@@ -13,7 +13,7 @@ The variables are:
  \item Pi: first-order inclusion probabilities
 }}
 \usage{
-DevoreData
+data(DevoreData)
 }
 \description{
 This data set contains observations from a randomized response survey conducted in a university to investigate the use of instant messaging.

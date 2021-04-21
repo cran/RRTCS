@@ -13,7 +13,7 @@ The variables are:
     \item Pi: first-order inclusion probabilities
 }}
 \usage{
-SoberanisCruzData
+data(SoberanisCruzData)
 }
 \description{
 This data set contains observations from a randomized response survey conducted in a population of 1500 families in a Spanish town

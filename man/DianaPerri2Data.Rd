@@ -12,7 +12,7 @@ The variables are:
  \item Pi: first-order inclusion probabilities
 }}
 \usage{
-DianaPerri2Data
+data(DianaPerri2Data)
 }
 \description{
 This data set contains observations from a simulated randomized response survey.

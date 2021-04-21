@@ -5,7 +5,7 @@
 \alias{ChaudhuriChristofidesDatapij}
 \title{Matrix of the second-order inclusion probabilities}
 \usage{
-ChaudhuriChristofidesDatapij
+data(ChaudhuriChristofidesDatapij)
 }
 \description{
 This dataset consists of a square matrix of dimension 100 with the first and second order inclusion probabilities

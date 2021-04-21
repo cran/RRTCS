@@ -7,7 +7,7 @@
 #' for the units included in sample \eqn{s}, drawn from a population of size \eqn{N=417} according to a
 #' sampling with unequal probabilities (probability proportional to agricultural subsidies in the previous year).
 #'
-#' @usage ChaudhuriChristofidesDatapij
+#' @usage data(ChaudhuriChristofidesDatapij)
 #' 
 #' @seealso \code{\link{ChaudhuriChristofides}}
 #' @seealso \code{\link{ChaudhuriChristofidesData}}

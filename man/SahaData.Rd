@@ -12,7 +12,7 @@ The variables are:
  \item Pi: first-order inclusion probabilities
 }}
 \usage{
-SahaData
+data(SahaData)
 }
 \description{
 This data set contains observations from a randomized response survey conducted in a population of students to investigate spending on alcohol.

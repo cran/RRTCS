@@ -15,7 +15,7 @@ The variables are:
  \item sex: The randomized response to the question: Have you had sex on the premises of the university?
 }}
 \usage{
-HorvitzData
+data(HorvitzData)
 }
 \description{
 This data set contains observations from a randomized response survey conducted in a university to sensitive questions described below.
